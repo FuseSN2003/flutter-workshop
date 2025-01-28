@@ -1,4 +1,4 @@
-# ev_charging_app
+Mobile Application Development Workshop KMUTNB
 
 A new Flutter project.
 

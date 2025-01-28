@@ -15,7 +15,7 @@ class _AboutPageState extends State<AboutPage> {
           title: const Text("EV Charging App",
               style: TextStyle(color: Colors.white)),
         ),
-        body: Column(
+        body: const Column(
           children: [
             Text(
               "About the EV Charging App",

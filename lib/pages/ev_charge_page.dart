@@ -18,6 +18,17 @@ class _EvChargePageState extends State<EvChargePage> {
   String _chargingPower = "";
   String _chargingTime = "";
 
+  @override
+  void dispose() {
+    _currentSoc.dispose();
+    _targetSoc.dispose();
+    _chargingRate.dispose();
+    _volt.dispose();
+    _batCapacity.dispose();
+    _efficiency.dispose();
+    super.dispose();
+  }
+
   void calculate() {
     final currentSoc = double.parse(_currentSoc.text);
     final targetSoc = double.parse(_targetSoc.text);

@@ -17,7 +17,7 @@ class _MyFutureBuilderPageState extends State<MyFutureBuilderPage> {
       String strBody = res.body.toString();
       return strBody;
     } else {
-      return "Error";
+      throw Exception('Failed to load data');
     }
   }
 
